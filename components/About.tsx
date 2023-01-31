@@ -22,8 +22,8 @@ function About({}: Props) {
         <div className='space-y-10 px-0 md:px-10'>
             <h3 className='text-4xl font-semibold'>A <span className='text-2xl underline'>little</span> bit about me</h3>
             <p className='text-md text-base'>I am a driven web developer based in Tampa, with a passion for creating visually appealing and user-friendly websites and applications that leave a lasting impression. My experience in HTML, CSS, and JavaScript, as well as my ability to develop responsive and interactive interfaces using modern frameworks, make me a valuable asset to any team.
+            Coding has been a transformative experience for me, particularly after completing Harvard&#39;s CS50X course taught by David Malan in 2022. The course ignited a spark within me, and since then I have dedicated myself to honing my skills and building production-level code. My ultimate goal is to make a positive impact in the field of web development, to be a part of something greater than myself, and to bring value to a team while pursuing my dream.</p>
 
-            Coding has been a transformative experience for me, particularly after completing Harvard's CS50X course taught by David Malan in 2022. The course ignited a spark within me, and since then I have dedicated myself to honing my skills and building production-level code. My ultimate goal is to make a positive impact in the field of web development, to be a part of something greater than myself, and to bring value to a team while pursuing my dream.</p>
         </div>
     </div>
   )

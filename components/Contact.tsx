@@ -32,7 +32,8 @@ function Contact({}: Props) {
 
         <div className='flex flex-col space-y-10 pt-12'>
             <h4>
-                <span className='text-4xl font-semibold'>Let's</span> <span className='text-2xl underline'>connect</span>
+                <span className='text-4xl font-semibold'>Let&#39;s</span> <span className='text-2xl underline'>connect</span>
+
             </h4>
         </div>
 
