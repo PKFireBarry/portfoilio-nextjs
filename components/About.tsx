@@ -13,11 +13,11 @@ function About({}: Props) {
                     items-center min-h-screen min-w-fit'>
         <h3 className='absolute top-24 uppercase tracking-[20px] 
                      text-gray-500
-                       text-2xl pt-4'>about</h3>
+                       text-2xl pt-4 inline-block'>about</h3>
         <Image
         src={AboutPic}
         alt='About Picture'
-        className='rounded-full h-56 w-56 mx-auto object-cover mb-20 md:mb-10 flex-shrink-0 md:rounded-lg md:h-128 md:w-96 xl:w-[400px] xl:h-[400px]'/>
+        className='relative rounded-full h-50 w-50 sm:h-56 w-56 mx-auto object-cover mb-20 md:mb-10 flex-shrink-0 md:rounded-lg md:h-128 md:w-128 xl:w-[400px] xl:h-[400px]'/>
 
         <div className='space-y-10 px-0 md:px-10'>
             <h3 className='text-4xl font-semibold'>A <span className='text-2xl underline'>little</span> bit about me</h3>

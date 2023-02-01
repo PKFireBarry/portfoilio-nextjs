@@ -37,7 +37,7 @@ const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
         <h3 className='absolute top-24 uppercase tracking-[20px] 
 text-gray-500 text-2xl pt-4'>Skills</h3>
         <h3 className=' absolute font-semibold top-36 sm:top-28 uppercase tracking-[3px] text-gray-100 pt-10'>Here is a Grid of some of the technologies I have recently been working with:</h3>
-        <div className='absolute sm:min-h-max grid grid-cols-2 gap-10 md:grid-cols-4 xl:grid-cols-4 sm:grid-cols-3'>
+        <div className='absolute sm:min-h-max grid grid-cols-2 xl:gap-10 md:gap-8 sm:gap-4 md:grid-cols-4 xl:grid-cols-4 sm:grid-cols-3'>
             <Skill Icon={ vscode } Item="VSCode"/>
             <Skill Icon={ git } Item="Git"/>        
             <Skill Icon={ html } Item="HTML" />
