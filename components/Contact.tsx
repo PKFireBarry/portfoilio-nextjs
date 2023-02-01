@@ -40,15 +40,15 @@ function Contact({}: Props) {
         <div className='space-y-10 sm:flex-row'>
             <div className='flex items-center space-x-5 justify-center'>
                 <PhoneIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
-                <p className='text-base xl:text-2xl sm:text-sm md:text-base xl:text-2xl'>813-995-7019</p>
+                <p className='text-base xl:text-2xl sm:text-sm md:text-base '>813-995-7019</p>
             </div>
                 <div className='flex items-center space-x-5 justify-center'>
                 <MapPinIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
-                <p className='text-base xl:text-2xl sm:text-sm md:text-base xl:text-2xl'>Tampa, FL</p>
+                <p className='text-base xl:text-2xl sm:text-sm md:text-base '>Tampa, FL</p>
             </div>
                 <div className='flex items-center space-x-5 justify-center'>
                 <EnvelopeIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
-                <p className='text-base xl:text-2xl sm:text-sm md:text-base xl:text-2xl'>Barry0719@gmail.com</p>
+                <p className='text-base xl:text-2xl sm:text-sm md:text-base '>Barry0719@gmail.com</p>
             </div>
         </div>
         <div>
