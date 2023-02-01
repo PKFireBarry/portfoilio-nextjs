@@ -13,7 +13,7 @@ type Props = {
 function Project({title, description, stack, link, photo}: Props) {
   return (
 
-<div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 sm:p-24 h-screen'>
+<div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 sm:p-24 min-h-screen min-w-fit h-screen'>
 
     <motion.img
     initial={{y: -300, opacity: 0}}
