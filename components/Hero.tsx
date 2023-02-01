@@ -2,7 +2,10 @@ import React from 'react'
 import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundEffect from './BackgroundEffect';
 import Image from 'next/image';
-import profilePic from '/home/Barry/My Programs/portfoilio-nextjs/desert .jpg'
+import Profilepic from './desert .jpg';
+
+
+
 
 
 type Props = {}
@@ -29,7 +32,7 @@ function Hero({}: Props) {
     text-center overflow-hidden'>
             <BackgroundEffect />
             <Image className='relative rounded-full h-[200px] w-[200px] mx-auto object-cover'
-            src={profilePic}
+            src={Profilepic}
             alt='profilePic'
             />
         <div className='z-20'>

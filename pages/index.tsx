@@ -9,7 +9,7 @@ import Projects from '@/components/Projects'
 import Contact from '@/components/Contact'
 import Link from 'next/link'
 import Image from 'next/image'
-import Profilepic from '/home/Barry/My Programs/portfoilio-nextjs/desert .jpg'
+import Profilepic from '/home/Barry/My Programs/portfoilio-nextjs/components/desert .jpg'
 
 
 

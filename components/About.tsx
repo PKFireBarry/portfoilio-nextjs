@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion'
 import React from 'react'
 import Image from 'next/image'
-import AboutPic from '/home/Barry/My Programs/portfoilio-nextjs/rock.jpg'
+import AboutPic from './rock.jpg'
 
 
 type Props = {}
