@@ -2,7 +2,7 @@
 
 
 
-## My current portfoilio made with nextjs and tailwindcss
+## My current portfoilio made with nextjs + tailwindcss
 
 I am a highly skilled front-end engineer, specializing in the development of modern, dynamic, and user-friendly web applications. One of my recent projects showcases my expertise in the latest web development technologies and frameworks, including Next.js, Tailwind, Framer Motion, Typewriter.js, React, and Hero Icons.
 
