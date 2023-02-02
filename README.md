@@ -4,7 +4,7 @@
 
 ## My current portfoilio made with nextjs + tailwindcss
 
-I am a highly skilled front-end engineer, specializing in the development of modern, dynamic, and user-friendly web applications. One of my recent projects showcases my expertise in the latest web development technologies and frameworks, including Next.js, Tailwind, Framer Motion, Typewriter.js, React, and Hero Icons.
+One of my recent projects showcases my expertise in the latest web development technologies and frameworks, including Next.js, Tailwind, Framer Motion, Typewriter.js, React, and Hero Icons.
 
 In this project, I utilized Next.js to create a fast and efficient platform with server-side rendering capabilities, ensuring smooth and seamless navigation for users. Tailwind was used to provide a clean and modern interface that is both visually appealing and intuitive to use. I also utilized Framer Motion to bring the platform to life with smooth animations and interactive elements, adding a touch of dynamism and interactivity to the user experience.
 
