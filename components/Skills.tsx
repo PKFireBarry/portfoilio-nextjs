@@ -31,6 +31,7 @@ const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
     initial={{ opacity: 0 }}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1.5 }}
+    viewport={{ once: true }}
     className='h-screen min-w-fit flex relative flex-col text-center 
     md:text-left xl:flex-row px-10 justify-evenly mx-auto 
     items-center max-w-[2000px] min-h-screen xl:space-y-0'>
