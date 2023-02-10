@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { PhoneIcon, MapPinIcon, EnvelopeIcon } from '@heroicons/react/24/solid';
+import { PhoneIcon, MapPinIcon, EnvelopeIcon, DocumentTextIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -38,6 +38,14 @@ function Contact({}: Props) {
         </div>
 
         <div className='space-y-10 sm:flex-row'>
+            <div className='flex items-center space-x-5 justify-center'>
+                    <a href="https://drive.google.com/file/d/1q3wYHTx3Mac9t0_cjzqrhAWDg3hyhiG5/view?usp=share_link">
+                    <DocumentTextIcon className='text-blue-300 hover:text-blue-700 hover:animate-bounce h-7 w-7 cursor-pointer animate-pulse' />
+                    </a>
+                    <a href="https://drive.google.com/file/d/1q3wYHTx3Mac9t0_cjzqrhAWDg3hyhiG5/view?usp=share_link">
+                        <p className='text-base xl:text-2xl sm:text-sm md:text-base hover:text-blue-600 hover:underline'>Resume</p>
+                    </a>
+            </div>           
             <div className='flex items-center space-x-5 justify-center'>
                 <PhoneIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
                 <p className='text-base xl:text-2xl sm:text-sm md:text-base '>813-995-7019</p>

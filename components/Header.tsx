@@ -2,6 +2,7 @@ import React from 'react'
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion'
 import Link from 'next/link'
+import { DocumentTextIcon } from '@heroicons/react/24/solid';
 
 
 type Props = {}
@@ -30,6 +31,9 @@ return (
         }}
         className='flex flex-row items-center'>
             {/* icons */}
+            <a href="https://drive.google.com/file/d/1q3wYHTx3Mac9t0_cjzqrhAWDg3hyhiG5/view?usp=share_link">
+            <DocumentTextIcon className='h-6 w-6 text-gray- cursor-pointer animate-pulse hover:text-blue-600 hover:underline hover:animate-bounce' />
+            </a>
             <SocialIcon url="https://www.linkedin.com/in/darion-george/" 
             fgColor='gray' 
             bgColor='transparent' 
@@ -38,10 +42,10 @@ return (
             fgColor='gray' 
             bgColor='transparent' 
             />
-            <SocialIcon url="https://open.spotify.com/artist/2P5bs8S76CjmQ4aKGoCVe2" 
-            fgColor='gray' 
-            bgColor='transparent' 
-            />
+
+
+
+
         </motion.div>
         <Link href="#contact">
         <motion.div
