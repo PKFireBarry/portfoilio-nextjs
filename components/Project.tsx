@@ -8,6 +8,7 @@ type Props = {
     stack: string;
     link: string;
     photo: string;
+    website: string;
 }
 
 function Project({title, description, stack, link, photo, website}: Props) {
