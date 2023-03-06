@@ -16,7 +16,7 @@ function Skill({directionLeft, Icon, Item}: Props) {
             }}
     transition={{ duration: 1.5 }}
     whileInView={{ opacity: 1, x: 0 }}
-    src={Icon} alt={Item} className='h-12 w-12 md:h-24 md:w-24 border rounded-full border-gray-500 object-cover xl:h-32 xl:w-32'/>
+    src={Icon} alt={Item} className='h-12 w-12 md:h-24 md:w-24 border rounded-full border-gray-500 object-cover xl:h-28 xl:w-28'/>
 
 
     {/*name of the logo*/}
