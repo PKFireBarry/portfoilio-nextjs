@@ -11,6 +11,7 @@ function Skill({directionLeft, Icon, Item}: Props) {
   return (
     <div className='group relative flex cursor-pointer pt-4'>
     <motion.img
+    viewport={{ once: true }}
     initial={{ x: directionLeft ?  -250 : 250,
     opacity: 0 
             }}
