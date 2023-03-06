@@ -31,7 +31,7 @@ function Projects({}: Props) {
 
         </div>
 
-        <div className='absolute w-full top-[30%] bg-black left-0 h-[500px] -skew-y-12'></div>
+        <div className='absolute w-full top-[30%] bg-sky-200 left-0 h-[500px] -skew-y-12'></div>
     </motion.div>
   )
 }
