@@ -52,21 +52,21 @@ const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
   <h3 className=' top-24 uppercase tracking-[20px]  text-gray-500 text-2xl pt-4'>Skills</h3>
   <h3 className='font-semibold text-xs uppercase tracking-[2px] text-gray-100 pt-8 pb-2'>Here are some of the technologies I have recently been working with:</h3>
   <div className='hidden flex-wrap overflow-auto justify-center mt-4 md:flex'>
-    <Skill Icon={vscode} Item='VSCode' Description='A powerful code editor' />
-    <Skill Icon={git} Item='Git' Description='A distributed version control system' />
-    <Skill Icon={html} Item='HTML' Description='The standard markup language for web pages'/>
-    <Skill Icon={css} Item='CSS' Description='A stylesheet language used to describe the presentation of a document written in HTML' />
-    <Skill Icon={JS} Item='JS' Description='A high-level programming language used to create interactive websites' />
+    <Skill Icon={vscode} Item='VSCode' Description='A powerful code editor' className='mx-4' />
+    <Skill Icon={git} Item='Git' Description='A distributed version control system' className='mx-4' />
+    <Skill Icon={html} Item='HTML' Description='The standard markup language for web pages' className='mx-4' />
+    <Skill Icon={css} Item='CSS' Description='A stylesheet language used to describe the presentation of a document written in HTML' className='mx-4' />
+    <Skill Icon={JS} Item='JS' Description='A high-level programming language used to create interactive websites' className='mx-4' />
     <Skill Icon={python} Item='Python' Description='A popular programming language used for web development, data analysis, and artificial intelligence'  />
-    <Skill Icon={nodejs} Item='NodeJS' Description='A JavaScript runtime built on Chromes V8 JavaScript engine' />
-    <Skill Icon={postgresql} Item='PostgreSQL' Description='A powerful, open source object-relational database system'/>
-    <Skill Icon={firebase} Item='Firebase' Description='A mobile and web application development platform' />
-    <Skill Icon={reactjs} Item='React' Description='A JavaScript library for building user interfaces' />
-    <Skill Icon={nextjs} Item='NextJS' Description='A framework for building server-side rendered React applications' />
-    <Skill Icon={tailwind} Item='Tailwind' Description='A utility-first CSS framework for rapidly building custom designs' />
-    <Skill Icon={bootstrap} Item='Bootstrap' Description='A popular CSS framework for building responsive, mobile-first websites' />
-    <Skill Icon={framer} Item='Framer Motion' Description='A production-ready motion library for React' />
-    <Skill Icon={muicss} Item='Material-Ui' Description='A popular React UI framework based on Googles Material Design' />
+    <Skill Icon={nodejs} Item='NodeJS' Description='A JavaScript runtime built on Chromes V8 JavaScript engine' className='mx-4' />
+    <Skill Icon={postgresql} Item='PostgreSQL' Description='A powerful, open source object-relational database system' className='mx-4' />
+    <Skill Icon={firebase} Item='Firebase' Description='A mobile and web application development platform' className='mx-4' />
+    <Skill Icon={reactjs} Item='React' Description='A JavaScript library for building user interfaces' className='mx-4' />
+    <Skill Icon={nextjs} Item='NextJS' Description='A framework for building server-side rendered React applications' className='mx-4' />
+    <Skill Icon={tailwind} Item='Tailwind' Description='A utility-first CSS framework for rapidly building custom designs' className='mx-4' />
+    <Skill Icon={bootstrap} Item='Bootstrap' Description='A popular CSS framework for building responsive, mobile-first websites' className='mx-4' />
+    <Skill Icon={framer} Item='Framer Motion' Description='A production-ready motion library for React' className='mx-4' />
+    <Skill Icon={muicss} Item='Material-Ui' Description='A popular React UI framework based on Googles Material Design' className='mx-4' />
     <Skill Icon={jquery} Item='JQuery' Description='A fast, small, and feature-rich JavaScript library' />
   </div>
   <div className='flex flex-wrap overflow-auto items-center justify-evenly md:hidden h-[75vh]'>
