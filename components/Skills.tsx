@@ -43,15 +43,18 @@ const firebase = 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg'
 const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
 
   return (
+    <>
+    <div className='flex justify-center text-center'>        
+                <h3 className=' uppercase pt-44 tracking-[20px] text-gray-500 text-lg md:text-2xl  '>skills</h3>
+  </div>
 <motion.div
   initial={{ opacity: 0 }}
   whileInView={{ opacity: 1 }}
   transition={{ duration: getRandomNumber()  }}
   viewport={{ once: true }}
-  className='flex flex-col mx-auto text-center justify-center px-10 w-screen h-screen overflow-hidden '>
-  <h3 className=' top-24 uppercase tracking-[20px]  text-gray-500 text-2xl pt-4'>Skills</h3>
-  <h3 className='font-semibold text-xs uppercase tracking-[2px] text-gray-100 pt-8 pb-2'>Here are some of the technologies I have recently been working with:</h3>
-  <div className='hidden flex-wrap overflow-auto justify-center mt-4 md:flex'>
+  className='flex flex-col mx-auto text-center justify-center w-screen h-screen overflow-hidden'>
+  <h3 className='font-semibold text-lg md:text-xl uppercase tracking-[2px] text-gray-100'>Here are some of the technologies I have recently been working with:</h3>
+  <div className='hidden flex-wrap overflow-auto justify-center md:flex'>
     <Skill Icon={vscode} Item='VSCode' Description='A powerful code editor' />
     <Skill Icon={git} Item='Git' Description='A distributed version control system' />
     <Skill Icon={html} Item='HTML' Description='The standard markup language for web pages'/>
@@ -163,6 +166,9 @@ const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
 
   </div>
 </motion.div>
+
+    </>
+
 
   )
 }

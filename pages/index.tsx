@@ -17,7 +17,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='bg-gray-700 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth
+    <div className='bg-gradient-to-b from-gray-800 to-gray-900 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth
      z-0 scrollbar-track-blue-500/20 scrollbar-thumb-black scrollbar-thin'>
       <Head>
         <title>An Awesome Portfoilio</title>
@@ -36,12 +36,11 @@ export default function Home() {
         <Skills />
       </section>
       <section id='projects' className='snap-start'>
-        <Projects />
+        <Projects/>
       </section>
       {/* experience */}
 
-      {/* contact me */}
-      <section id='contact' className='snap-start'>
+      <section id='contact' className='snap-end'>
         <Contact />
       </section>
 

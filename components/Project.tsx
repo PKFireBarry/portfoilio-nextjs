@@ -18,7 +18,7 @@ function Project({title, description, stack, link, photo, website}: Props) {
   animate={{ opacity: 1, y: 0 }}
   transition={{ duration: 0.5 }}
   className='w-screen flex flex-col
-   items-center justify-center p-6 md:p-10 h-screen bg-gray-900 text-gray-100'
+   items-center justify-center p-6 md:p-10 h-screen  text-gray-100'
 >
   <a href={website}>
     <motion.img

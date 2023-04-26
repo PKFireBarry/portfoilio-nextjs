@@ -68,10 +68,9 @@ function Projects({}: Props) {
   whileInView={{ opacity: 1 }}
   transition={{ duration: 1 }}
   className="relative flex flex-col overflow-hidden text-left max-w-full justify-center items-center">
-  <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl pt-4">
+  <h3 className="top-24 hidden md:block uppercase tracking-[20px] text-gray-500 text-2xl pt-8 text-center">
     Projects
   </h3>
-
   <div className="z-20">
     <Project
       title={projects[0].title}
@@ -80,7 +79,6 @@ function Projects({}: Props) {
       photo={projects[0].photo}
       website={projects[0].website}
       stack={projects[0].stack}
-
       
     />
     <Project
@@ -99,7 +97,6 @@ function Projects({}: Props) {
       photo={projects[2].photo}
       website={projects[2].website}
       stack={projects[2].stack}
-
       
     />
     <Project
@@ -130,7 +127,6 @@ function Projects({}: Props) {
       
     />
   </div>
-  <div className="absolute w-full top-[30%] bg-sky-300 left-0 h-[500px] -skew-y-12"></div>
 </motion.div>
   )
 }
