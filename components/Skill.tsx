@@ -1,32 +1,42 @@
-import React from 'react'
-import { motion } from 'framer-motion'
+import React, { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 type Props = {
   directionLeft?: boolean;
   Icon: string;
   Item: string;
+  Description: string;
 };
 
-function Skill({directionLeft, Icon, Item}: Props) {
-  return (
-    <div className='group relative flex cursor-pointer pt-4'>
-    <motion.img
-    viewport={{ once: true }}
-    initial={{ x: directionLeft ?  -250 : 250,
-    opacity: 0 
-            }}
-    transition={{ duration: 1.5 }}
-    whileInView={{ opacity: 1, x: 0 }}
-    src={Icon} alt={Item} className='h-12 w-12 md:h-24 md:w-24 border rounded-full border-gray-500 object-cover xl:h-28 xl:w-28'/>
+function Skill({ directionLeft, Icon, Item, Description }: Props) {
+// function to generarate a random number
 
-
-    {/*name of the logo*/}
-    
-      <div className=''>
-        <h3 className=' pb-8 text-black text-md font-bold uppercase tracking-[3px]'>{Item}</h3>
-      </div>
-    </div>
-  )
+function getRandomNumber() {
+  return Math.random() * 1.5;
 }
 
-export default Skill
+function getRandomXY() {
+  return {
+    x: Math.random() * -100,
+    y: Math.random() * -100
+  }
+
+}
+const randomNumber = getRandomNumber();
+const randomXY = getRandomXY();
+
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: randomXY.y, x: randomXY.x}}
+      transition={{ duration: randomNumber }}
+      whileInView={ { opacity: 1, y: 0, x: 0 }  }
+      className='flex flex-col items-center justify-center bg-gray-100 rounded-lg p-4 m-2'
+    >
+      <img src={Icon} alt="" className='h-8 w-8'/>
+      <h4 className='text-gray-700  font-medium mb-2'>{Item}</h4>
+      <p className='text-gray-500 text-sm text-center'>{Description}</p>
+    </motion.div>
+  );
+}
+
+export default Skill;

@@ -32,7 +32,7 @@ export default function Home() {
       <section id="journey" className='snap-center'>
 
       </section>
-      <section id='skills' className='snap-start'>
+      <section id='skills' className=' snap-center'>
         <Skills />
       </section>
       <section id='projects' className='snap-start'>

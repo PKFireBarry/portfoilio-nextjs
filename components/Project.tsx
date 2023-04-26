@@ -13,45 +13,71 @@ type Props = {
 
 function Project({title, description, stack, link, photo, website}: Props) {
   return (
-
-<div className='w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 sm:p-24 min-h-screen min-w-fit h-screen shadow-lg'>
-    <a
-    className=''
-    href={website}
-    >
-      <motion.img
-      initial={{y: -300, opacity: 0}}
-      whileInView={{y: 0, opacity: 1}}
-      transition={{duration: 1}}
+<motion.div
+  initial={{ opacity: 0, y: 50 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.5 }}
+  className='w-screen flex flex-col
+   items-center justify-center p-6 md:p-10 h-screen bg-gray-900 text-gray-100'
+>
+  <a href={website}>
+    <motion.img
+      initial={{ y: -300, opacity: 0 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
+      whileInView={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
       viewport={{ once: true }}
       src={photo}
       alt={title}
-      className='h-48 w-48 md:h-96 md:w-96 border rounded-md border-gray-500 object-cover xl:h-96 xl:w-96'
-      />
-    </a>
-    <div
-    className='rounded-lg bg-sky-500'
-    >
-    <div className='space-y-10 px-0 md:px-10 max-w-4xl'>
-        <h3 className='text-3xl font-semibold text-center'>
-            <span className='underline '>Project: {title}</span>
-
-        </h3>
-
-        <p className='text-lg text-center md:text-left'>{description}</p>
-        <div className='text-lg text-center md:text-left mx-auto font-semibold pb-8'><span className='text-2xl'>Tech Stack:</span> {stack}</div>
-    </div>
-        <a
-        className='flex px-4 py-2 bg-gray-500 text-white rounded-b-lg hover:bg-blue-900 text-md text-center md:text-left font-semibold self-center justify-center'
+      className='h-44 w-44 md:h-[50vh] md:w-[50vh] border rounded-md border-gray-500 object-cover'
+    />
+  </a>
+  <motion.div
+    initial={{ opacity: 0, y: 50 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ duration: 0.5, delay: 0.2 }}
+    className='bg-gray-800 rounded-lg shadow-lg w-full max-w-4xl mt-10'
+  >
+    <div className='p-8 md:p-12'>
+      <motion.h3
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.4 }}
+        className='text-lg lg:text-3xl font-semibold text-center mb-12 sm:text-left'
+      >
+        <span className='border-b-4 border-blue-500 pb-2'>{title}</span>
+      </motion.h3>
+      <motion.p
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.25, delay: 0.6 }}
+        className='text-sm md:text-base text-center md:text-left mb-6'
+      >
+        {description}
+      </motion.p>
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className=' text-center font-semibold mb-8 sm:text-left text-sm md:text-lg'
+      >
+        <span className='text-lg md:text-2xl'>Tech Stack:</span> {stack}
+      </motion.div>
+      <motion.a
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.1 }}
+        className='bg-blue-500 hover:bg-blue-700 text-white font-semibold py-2 px-4 rounded-md text-center w-full text-sm md:text-base'
         href={link}
-        >
-  Github
-</a>
-
+      >
+        Github
+      </motion.a>
     </div>
-</div>
+  </motion.div>
+</motion.div>
+);
+};
 
-  )
-}
 
 export default Project

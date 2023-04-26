@@ -27,52 +27,28 @@ function Contact({}: Props) {
     
 
   return (
-    <div className='h-screen min-h-screen  flex relative flex-col md:text-left  md:flex-col max-w-4xl px-10 justify-evenly mx-auto items-center'>
-        <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 md:text-lg xl:text-2xl text-base mx-auto'>Contact</h3>
+    <div className='relative flex justify-center items-center h-screen w-screen '>
+<div className='mx-auto px-4 sm:px-6 lg:px-8'>
+  <h3 className='text-center uppercase tracking-[20px] text-gray-500 md:text-left md:text-lg xl:text-2xl text-base'>Contact</h3>
 
-        <div className='flex flex-col space-y-10 pt-12 mx-auto'>
-            <h4>
-                <span className='text-base md:text-2xl xl:text-4xl sm:text-base font-semibold'>Let&#39;s</span> <span className='text-2xl md:text-2xl sm:text-base underline'>connect</span>
+  <div className='flex flex-col space-y-10 pt-12 mx-auto'>
+    <h4>
+      <span className='text-base md:text-2xl xl:text-4xl sm:text-base font-semibold'>Let&#39;s</span> <span className='text-2xl md:text-2xl sm:text-base underline'>connect</span>
+    </h4>
+  </div>
 
-            </h4>
-        </div>
+  <div className='grid grid-cols-1 gap-16 w-[75vw]'>
+    <input {...register('name')} placeholder='Name' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' type='text'/>
+    <input {...register('email')} placeholder='Email' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' type="email"/>
+    <input {...register('subject')} placeholder='Subject' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' type='text'/>
+    <textarea rows={12} {...register('message')} placeholder='Message' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' />
+  </div>
 
-        <div className='space-y-10 sm:flex-row'>
-            <div className='flex items-center space-x-5 justify-center'>
-                    <a href="https://drive.google.com/file/d/1q3wYHTx3Mac9t0_cjzqrhAWDg3hyhiG5/view?usp=share_link">
-                    <DocumentTextIcon className='text-blue-300 hover:text-blue-700 hover:animate-bounce h-7 w-7 cursor-pointer animate-pulse' />
-                    </a>
-                    <a href="https://drive.google.com/file/d/1q3wYHTx3Mac9t0_cjzqrhAWDg3hyhiG5/view?usp=share_link">
-                        <p className='text-base xl:text-2xl sm:text-sm md:text-base hover:text-blue-600 hover:underline'>Resume</p>
-                    </a>
-            </div>           
-            <div className='flex items-center space-x-5 justify-center'>
-                <PhoneIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
-                <p className='text-base xl:text-2xl sm:text-sm md:text-base '>813-995-7019</p>
-            </div>
-                <div className='flex items-center space-x-5 justify-center'>
-                <MapPinIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
-                <p className='text-base xl:text-2xl sm:text-sm md:text-base '>Tampa, FL</p>
-            </div>
-                <div className='flex items-center space-x-5 justify-center'>
-                <EnvelopeIcon className='text-blue-300 h-7 w-7 animate-pulse'/>
-                <p className='text-base xl:text-2xl sm:text-sm md:text-base '>Barry0719@gmail.com</p>
-            </div>
-        </div>
-        <div>
-            <form onSubmit={handleSubmit(onSubmit)} className='flex flex-col sm:flex-shrink-0 space-y-2 w-fit mx-auto'>
-                <div className='flex space-x-2'>
-                    <input {...register('name')} placeholder='Name' className='contactinput' type='text'/>
-                    <input {...register('email')} placeholder='Email' className='contactinput' type="email"/>
-                </div>
+  <button type='submit' className='bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded text-base md:text-lg xl:text-2xl mt-4'>Submit</button>
+</div>
 
-                <input {...register('subject')} placeholder='Subject' className='contactinput' type='text'/>
-                <textarea {...register('message')} placeholder='Message' className='contactinput' />
-                <button type='submit' className='bg-blue-400 py-5 px-10 rounded-md text-black font-bold text-lg'>Submit</button>
-
-            </form>
-        </div>
     </div>
+
   )
 }
 
