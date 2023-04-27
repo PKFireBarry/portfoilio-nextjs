@@ -30,11 +30,11 @@ const randomXY = getRandomXY();
       initial={{ opacity: 0, y: randomXY.y, x: randomXY.x}}
       transition={{ duration: randomNumber }}
       whileInView={ { opacity: 1, y: 0, x: 0 }  }
-      className='flex flex-col items-center justify-center bg-gray-100 rounded-lg p-4 m-2'
+      className='flex flex-col items-center justify-center bg-slate-600 rounded-lg p-4 m-2'
     >
-      <img src={Icon} alt="" className='h-8 w-8'/>
-      <h4 className='text-gray-700  font-medium mb-2'>{Item}</h4>
-      <p className='text-gray-500 text-sm text-center'>{Description}</p>
+      <img src={Icon} alt="" className='h-8 w-8 hover:h-12 hover:w-12 duration-1000'/>
+      <h4 className='text-white  font-medium mb-2'>{Item}</h4>
+      <p className='text-white text-sm text-center'>{Description}</p>
     </motion.div>
   );
 }

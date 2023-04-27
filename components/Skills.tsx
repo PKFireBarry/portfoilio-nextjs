@@ -41,6 +41,9 @@ const muicss = 'https://cdn.worldvectorlogo.com/logos/material-ui-1.svg'
 const framer = 'https://cdn.worldvectorlogo.com/logos/framer-motion.svg'
 const firebase = 'https://cdn.worldvectorlogo.com/logos/firebase-1.svg'
 const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
+const flask = 'https://cdn.worldvectorlogo.com/logos/flask.svg'
+const prisma =  'https://cdn.worldvectorlogo.com/logos/prisma-3.svg'
+const azure = 'https://cdn.worldvectorlogo.com/logos/azure-1.svg'
 
   return (
     <>
@@ -71,6 +74,10 @@ const postgresql = 'https://cdn.worldvectorlogo.com/logos/postgresql.svg'
     <Skill Icon={framer} Item='Framer Motion' Description='A production-ready motion library for React' />
     <Skill Icon={muicss} Item='Material-Ui' Description='A popular React UI framework based on Googles Material Design' />
     <Skill Icon={jquery} Item='JQuery' Description='A fast, small, and feature-rich JavaScript library' />
+    <Skill Icon={flask} Item='Flask' Description='A microframework for Python' />
+    <Skill Icon={prisma} Item='Prisma' Description='A database toolkit for ORM' />
+    <Skill Icon={azure} Item='Azure' Description='A cloud computing platform' />
+
   </div>
   <div className='flex flex-wrap overflow-auto items-center justify-evenly md:hidden h-[75vh]'>
 

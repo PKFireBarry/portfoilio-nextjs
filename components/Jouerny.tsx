@@ -6,7 +6,7 @@ type Props = {}
 
 function Journey({}: Props) {
   return (
-<div className='h-screen w-screen flex relative flex-col text-center 
+<div className=' h-screen  w-screen flex relative flex-col text-center 
     md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto 
     items-center text-black'>        
 
@@ -15,6 +15,16 @@ function Journey({}: Props) {
       <div className='flex flex-col md:flex-row mx-auto px-4 absolute text-sm md:text-lg'>
 
         <div className='timeline'>
+                    <div className='bg-gray-100 rounded-lg p-8 shadow-lg'>
+  <h4 className='text-lg font-bold'>Software Developer</h4>
+  <p className='text-gray-700 md:text-base text-xs'>
+  As an enthusiastic programmer, Ive poured my heart and soul into developing multiple web applications that truly showcase my full-stack development skills. I take pride in my creations, including a dynamic Cover Letter Writer, a stunning Blog, and an engaging Chat Messenger. These projects were built using cutting-edge technologies such as Next.js, Tailwind CSS, OpenAI API, and Firebase, all of which were carefully selected to ensure exceptional user experience and seamless functionality.
+  </p>
+  {/*
+  
+  */}
+  <span className='text-gray-500 text-xs'></span>
+</div> 
           <div className='bg-gray-100 rounded-lg p-8 shadow-lg 
             md:mr-8 md:mb-0 mb-8'>
             <h4 className='text-lg font-bold mb-2'>IT Administrator</h4>
@@ -35,7 +45,7 @@ function Journey({}: Props) {
             <span className='text-gray-500 text-xs'>2020 - 2022</span>
           </div>
 
-          <div className='bg-gray-100 rounded-lg p-8 shadow-lg'>
+          <div className='bg-gray-100 rounded-lg p-8 shadow-lg hidden md:block'>
             <h4 className='text-lg font-bold mb-2'>Channel Sales Representative</h4>
             <p className='text-gray-700 md:text-base text-xs'>
               Prior to becoming a developer, I worked as a Channel Sales 
@@ -52,6 +62,16 @@ function Journey({}: Props) {
             </p>
             <span className='text-gray-500 text-xs'>2019 - 2020</span>
           </div>
+
+
+          <div className='bg-gray-100 rounded-lg p-8 shadow-lg hidden md:block'>
+  <h4 className='text-lg font-bold'>Hillsborough Community College</h4>
+  <h4 className='text-base mb-2 font-semibold'>A.S. in Information Technology</h4>
+  <p className='text-gray-700 md:text-base text-xs'>
+    Relevant Courses: Responsive Web Design, JavaScript Algorithms And Data Structures, Systems Analysis, Python for Everybody.
+  </p>
+  <span className='text-gray-500 text-xs'>2017 - 2020</span>
+</div> 
         </div>
 
         <style jsx>{`
