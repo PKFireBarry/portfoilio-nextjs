@@ -10,6 +10,9 @@ import Contact from '@/components/Contact'
 import Link from 'next/link'
 import Image from 'next/image'
 import Profilepic from '../components/desert .jpg'
+import { Canvas } from '@react-three/fiber'
+import { Suspense } from 'react'
+import { MeshDistortMaterial, OrbitControls, Sphere } from '@react-three/drei'
 
 
 
@@ -22,6 +25,7 @@ export default function Home() {
       <Head>
         <title>An Awesome Portfoilio</title>
       </Head>
+
       <Header />
       <section id='hero' className='snap-center '>
         <Hero />
@@ -37,6 +41,9 @@ export default function Home() {
         <Projects/>
       </section>
       {/* experience */}
+      <section className='snap-end'>
+        <Jouerny />
+      </section>
 
       <section id='contact' className='snap-end'>
         <Contact />

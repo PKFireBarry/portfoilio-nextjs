@@ -55,8 +55,15 @@ const projects = [
     link: 'https://github.com/PKFireBarry/Sticky-Notes-App',
     photo: 'https://i.ibb.co/Hxy9s2r/Screenshot-from-2023-02-21-17-43-56.png',
     website: 'https://pkfirebarry.github.io/Sticky-Notes-App/',
+  },
+  {
+    title: 'AI Cover Letter Writer',
+    description: 'An AI Cover Letter Writer, the ultimate solution for job seekers looking to land their dream job. Uses cutting-edge AI and NLP technologies to generate personalized cover letters that match the job requirements, saving you time and increasing your chances of success. Say goodbye to the stress and frustration of writing cover letters and hello to a streamlined and professional approach. Invest in your future and try the AI Cover Letter Writer.',
+    stack: 'eslint, reactjs, nextjs, particles, openai, firebase-auth, firebase-database, tailwindcss, universal-cookie, framer-motion, react-hot-toast',
+    link: 'https://github.com/PKFireBarry/AI-Cover-Letter-Writer',
+    photo: '',
+    website: 'https://ai-cover-letter-writer.vercel.app/',
   }
-  
 ]
 
 
@@ -73,30 +80,12 @@ function Projects({}: Props) {
   </h3>
   <div className="z-20">
     <Project
-      title={projects[0].title}
-      description={projects[0].description}
-      link={projects[0].link}
-      photo={projects[0].photo}
-      website={projects[0].website}
-      stack={projects[0].stack}
-      
-    />
-    <Project
       title={projects[1].title}
       description={projects[1].description}
       link={projects[1].link}
       photo={projects[1].photo}
       website={projects[1].website}
       stack={projects[1].stack}
-      
-    />
-    <Project
-      title={projects[2].title}
-      description={projects[2].description}
-      link={projects[2].link}
-      photo={projects[2].photo}
-      website={projects[2].website}
-      stack={projects[2].stack}
       
     />
     <Project
@@ -109,22 +98,12 @@ function Projects({}: Props) {
       
     />
     <Project
-      title={projects[4].title}
-      description={projects[4].description}
-      link={projects[4].link}
-      photo={projects[4].photo}
-      website={projects[4].website}
-      stack={projects[4].stack}
-      
-    />
-    <Project
-      title={projects[5].title} 
-      description={projects[5].description}
-      link={projects[5].link}
-      photo={projects[5].photo}
-      website={projects[5].website}
-      stack={projects[5].stack}
-      
+        title={projects[6].title}
+        description={projects[6].description}
+        link={projects[6].link}
+        photo={projects[6].photo}
+        website={projects[6].website}
+        stack={projects[6].stack}
     />
   </div>
 </motion.div>

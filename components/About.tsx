@@ -7,9 +7,10 @@ import AboutPic from './rock.jpg'
 type Props = {}
 
 function About({}: Props) {
-  return (<><div className="flex justify-center md:hidden">
-    <h3 className="text-lg md:text-2xl uppercase tracking-wider text-gray-500">About</h3>
-  </div><div className="flex flex-col md:flex-row items-center justify-center md:justify-start max-w-7xl mx-auto py-16">
+  return (<div className=''><div className="flex justify-center  md:hidden z-20">
+    <h3 className=" hidden md:text-lg md:text-2xl uppercase tracking-wider text-gray-500">About</h3>
+  </div>
+  <div className="flex flex-col md:flex-row w-screen h-screen items-center justify-center  max-w-7xl mx-auto py-16">
       <div className="hidded md:block  h-56 w-56 md:w-1/2 md:h-1/2 lg:w-1/2">
         <Image
           src={AboutPic}
@@ -36,7 +37,7 @@ function About({}: Props) {
           View my work
         </a>
       </div>
-    </div></>
+    </div></div>
 
   )
 }

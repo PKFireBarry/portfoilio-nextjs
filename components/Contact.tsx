@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { PhoneIcon, MapPinIcon, EnvelopeIcon, DocumentTextIcon } from '@heroicons/react/24/solid';
 import { useForm, SubmitHandler } from "react-hook-form";
 
+
 type Inputs = {
     name: string;
     email: string;
@@ -42,9 +43,8 @@ function Contact({}: Props) {
     <input {...register('email')} placeholder='Email' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' type="email"/>
     <input {...register('subject')} placeholder='Subject' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' type='text'/>
     <textarea rows={12} {...register('message')} placeholder='Message' className='py-2 px-4 rounded-md border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-transparent text-base md:text-lg xl:text-2xl w-full' />
+  <button type='submit' className='bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded text-base md:text-lg xl:text-2xl mt-4'>Submit</button>    
   </div>
-
-  <button type='submit' className='bg-blue-400 hover:bg-blue-500 text-white font-bold py-2 px-4 rounded text-base md:text-lg xl:text-2xl mt-4'>Submit</button>
 </div>
 
     </div>
