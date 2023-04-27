@@ -29,9 +29,7 @@ export default function Home() {
       <section id='about' className='snap-center'>
         <About />
       </section>
-      <section id="journey" className='snap-center'>
 
-      </section>
       <section id='skills' className=' snap-center'>
         <Skills />
       </section>
@@ -45,15 +43,17 @@ export default function Home() {
       </section>
 
       <Link href="#hero">
-        <footer className='sticky bottom-5 w-full cursor-pointer'>
+        <footer className='sticky bg bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
             <Image src={Profilepic} alt='profilePic'
-            className='relative filter grayscale hover:grayscale-0 cursor-pointer rounded-full h-[32px] w-[32px] mx-auto object-cover'/>
+            className='relative filter grayscale hover:grayscale-0 cursor-pointer rounded-full h-[32px] w-[32px] mx-auto object-cover transform hover:scale-150 duration-1000 ease-in-out '/>
           </div>
+          <p className='hidden md:block text-center text-sm'>
+            <span className='text-[#0070f3]'>An Awesome Portfoilio</span> by <span className='text-[#0070f3]'>Darion George</span>
+          </p>
+          <p className='hidden md:block text-center text-sm'>Back to the top?</p>
         </footer>
       </Link>
-
-
     </div>
   )
 }
