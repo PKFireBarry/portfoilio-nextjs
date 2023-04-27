@@ -55,6 +55,7 @@ function Hero({}: Props) {
         <a href='#skills'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>Skills</button></a>
         <a href='#projects'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>Projects</button></a>
         <a href='#contact'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>Contact</button></a>
+        
     </div>
 </div>
 </div>
