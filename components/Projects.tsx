@@ -61,7 +61,7 @@ const projects = [
     description: 'An AI Cover Letter Writer, the ultimate solution for job seekers looking to land their dream job. Uses cutting-edge AI and NLP technologies to generate personalized cover letters that match the job requirements, saving you time and increasing your chances of success. Say goodbye to the stress and frustration of writing cover letters and hello to a streamlined and professional approach. Invest in your future and try the AI Cover Letter Writer.',
     stack: 'eslint, reactjs, nextjs, particles, openai, firebase-auth, firebase-database, tailwindcss, universal-cookie, framer-motion, react-hot-toast',
     link: 'https://github.com/PKFireBarry/AI-Cover-Letter-Writer',
-    photo: '',
+    photo: 'https://i.ibb.co/mcfHytm/Screenshot-from-2023-04-10-02-00-14.png',
     website: 'https://ai-cover-letter-writer.vercel.app/',
   }
 ]
