@@ -22,7 +22,6 @@ export default function Home() {
       <Head>
         <title>An Awesome Portfoilio</title>
       </Head>
-
       <Header />
       <section id='hero' className='snap-center '>
         <Hero />
