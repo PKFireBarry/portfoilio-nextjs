@@ -3,11 +3,11 @@ import { Cursor, useTypewriter } from 'react-simple-typewriter'
 import BackgroundEffect from './BackgroundEffect';
 import Image from 'next/image';
 import Profilepic from './desert .jpg';
-import { Canvas } from '@react-three/fiber';
-import { Box, MeshDistortMaterial, OrbitControls, Sphere } from '@react-three/drei';
+import Button from './Button';
 
 
 
+const sections = ['About','Skills','Projects','Journey','Contact',]
 
 
 type Props = {}
@@ -40,24 +40,29 @@ function Hero({}: Props) {
   return (
 <div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
 <BackgroundEffect />
-<Image className='relative bottom-5 rounded-full h-[200px] w-[200px] mx-auto object-cover'
-    src={Profilepic}
-    alt='profilePic'
-/>
+
+<div className='sm:bottom-28 relative bg-[#031463] rounded-[50%] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)] w-[210px] h-[210px] sm:w-[390px] sm:h-[390px] flex justify-center items-center text-center'>
+    <Image className='rounded-full mx-auto transform w-[200px] h-[200px] sm:w-[374px] sm:h-[374px] object-cover' src={Profilepic} alt='profilePic' />    
+</div>
+
+    <h2 className=' z-20 flex items-center p-8 justify-center h-[75px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-black bg-neutral-300 rounded-xl font-fira-code border-[4px] border-solid border-[#031463] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]'>Web Developer</h2> 
+    
 <div className='z-20'>
-    <h2 className='text-sm uppercase text-gray-200 pb-4 tracking-[12px] font-medium'>Web Developer</h2>
-    <h1 className='text-3xl lg:text-4xl font-semibold px-10 text-white'>
-        <span className='mr-3 pt-4'>{text}</span>
-        <Cursor cursorColor='white' />
-    </h1>
-    <div className='flex flex-wrap justify-evenly gap-6 mt-12'>
-        <a href='#about'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>About</button></a>
-        <a href='#skills'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>Skills</button></a>
-        <a href='#projects'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>Projects</button></a>
-        <a href='#contact'><button className='heroButton bg-gray-200 text-gray-800 hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 m-2'>Contact</button></a>
-        
+    <div className='hidden sm:flex items-center justify-center shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)] rounded-xl'>
+        <h1 className='p-4 rounded-xl text-center lg:text-4xl font-semibold bg-neutral-300 text-[#031463] text-5xl font-fira-code border-[4px] border-solid border-[#031463]'>
+            <span className='mr-3 pt-4 text-lg md:text-2xl lg:text-3xl'>{text}</span>
+            <Cursor cursorColor='black' />
+        </h1>        
     </div>
 </div>
+
+    <div className='flex flex-wrap justify-around mt-6'>
+        <Button section={sections[0]}/>
+        <Button section={sections[1]}/>
+        <Button section={sections[2]}/>
+        <Button section={sections[3]}/>
+        <Button section={sections[4]}/>
+    </div>
 </div>
   )
 }

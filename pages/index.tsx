@@ -10,17 +10,14 @@ import Contact from '@/components/Contact'
 import Link from 'next/link'
 import Image from 'next/image'
 import Profilepic from '../components/desert .jpg'
-import { Canvas } from '@react-three/fiber'
 import { Suspense } from 'react'
-import { MeshDistortMaterial, OrbitControls, Sphere } from '@react-three/drei'
-
 
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <div className='bg-gradient-to-b from-gray-800 to-gray-900 text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth
+    <div className='bg-lavender text-white h-screen snap-y snap-mandatory overflow-y-scroll overflow-x-hidden scroll-smooth
      z-0 scrollbar-track-blue-500/20 scrollbar-thumb-black scrollbar-thin'>
       <Head>
         <title>An Awesome Portfoilio</title>
