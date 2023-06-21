@@ -45,7 +45,7 @@ export default function Home() {
         <Contact />
       </section>
 
-      <Link href="#hero">
+      <Link href="#hero" className=''>
         <footer className='sticky bg bottom-5 w-full cursor-pointer'>
           <div className='flex items-center justify-center'>
             <Image src={Profilepic} alt='profilePic'

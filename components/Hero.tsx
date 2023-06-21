@@ -5,6 +5,7 @@ import Image from 'next/image';
 import Profilepic from './desert .jpg';
 import Button from './Button';
 import { motion } from 'framer-motion';
+import ParticleBackGround from './ParticleBackGround';
 
 
 
@@ -40,8 +41,10 @@ function Hero({}: Props) {
     
     
   return (
-<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden'>
+<div className='h-screen flex flex-col space-y-8 items-center justify-center text-center overflow-hidden '>
+<ParticleBackGround/>    
 <BackgroundEffect />
+
 
 <motion.div
 whileHover={{ scale: 1.5}} 

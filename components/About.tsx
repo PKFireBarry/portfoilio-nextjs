@@ -2,14 +2,15 @@ import { motion } from "framer-motion";
 import React from "react";
 import Image from "next/image";
 import AboutPic from "./rock.jpg";
+import ParticleBackGround from '../components/ParticleBackGround';
 
 type Props = {};
 
 function About({}: Props) {
   return (
-    <div className="h-screen w-screen flex justify-center">
+    <div className=" h-screen w-screen flex justify-center bg-black">
       <div className=" items-center flex ">
-        <div className=" bg-black w-screen h-screen overflow-hidden">
+        <div className=" w-screen h-screen overflow-hidden">
           <div className="flex flex-col justify-center items-center h-screen w-screen">
             <motion.div
               initial={{ opacity: 0, y: 500 }}

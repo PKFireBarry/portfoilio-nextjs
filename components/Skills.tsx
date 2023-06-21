@@ -52,11 +52,11 @@ function Skills({}: Props) {
         viewport={{ once: true }}
         className="flex flex-col mx-auto text-center justify-center w-screen h-screen overflow-hidden items-center"
       >
-        <div>
-          <h3 className="font-semibold text-lg md:text-4xl uppercase tracking-[2px] text-black underline m-4">
+        <div className="">
+          <h3 className="font-semibold text-lg md:text-4xl uppercase tracking-[2px] text-white underline m-4">
             Tools Of The Trade?
           </h3>
-          <p className="font-semibold text-md md:text-xl uppercase tracking-[2px] text-black  m-4">
+          <p className="font-semibold text-md md:text-xl uppercase tracking-[2px] text-white  m-4">
             sometimes all we need is a push!
           </p>
         </div>

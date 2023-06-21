@@ -29,16 +29,16 @@ function Contact({}: Props) {
 
   return (
 <div className="relative justify-center items-center h-screen w-screen ">
-  <div className="flex justify-center items-center pt-20">
-    <h3 className="font-semibold text-3xl md:text-5xl uppercase tracking-[2px] text-black underline m-4">
+  <div className="flex justify-center items-center pt-20 text-white">
+    <h3 className="font-semibold text-3xl md:text-5xl uppercase tracking-[2px]  underline m-4">
       Contact
     </h3>
   </div>
-    <p className='bg-green-500 text-lg md:hidden mx-auto w-[60%] text-black flex justify-center items-center font-poppins'>
+    <p className=' text-lg md:hidden mx-auto w-[60%] text-white flex justify-center items-center font-poppins'>
     Have some big idea or brand to develop and need help? Then reach out{" "}
         {`we'd`} love to hear about your project and provide help
     </p>
-    <div className='bg-orange-500 md:hidden'>
+    <div className='md:hidden'>
       <div className="flex flex-row  items-center justify-evenly gap-[20px] text-lg m-4">
         <div className="relative text-base italic">barry0719@gmail.com</div>
         <a
@@ -48,7 +48,7 @@ function Contact({}: Props) {
 
       </div>
     </div>
-  <div className="mx-auto w-[85%] h-[85%] px-0 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-black md:flex-row">
+  <div className="mx-auto w-[85%] h-[85%] px-0 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-white md:flex-row">
     <div className=" hidden md:flex flex-col items-start justify-start gap-[20px] md:w-1/2 flex-wrap">
       <div className="relative  text-6xl">Let’s Talk</div>
       <div className="relative text-xl inline-block w-full p-4 font-poppins">
