@@ -48,17 +48,18 @@ function Hero({}: Props) {
 
 <motion.div
 whileHover={{ scale: 1.5}} 
-
+drag
  className='sm:bottom-28 relative bg-[#031463] rounded-[50%] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)] w-[210px] h-[210px] sm:w-[390px] sm:h-[390px] flex justify-center items-center text-center'>
     <Image className='rounded-full mx-auto transform w-[200px] h-[200px] sm:w-[374px] sm:h-[374px] object-cover' src={Profilepic} alt='profilePic' />    
 </motion.div>
 
-    <h2
-
-    className=' z-20 flex items-center p-8 justify-center h-[75px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white bg-[#031463] rounded-xl font-fira-code border-[4px] border-solid border-black shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]'>Web Developer</h2> 
+    <motion.h2
+    drag
+    className=' z-20 flex items-center p-8 justify-center h-[75px] text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-white bg-[#031463] rounded-xl font-fira-code border-[4px] border-solid border-black shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]'>Web Developer</motion.h2> 
     
 <motion.div
           whileHover={{ scale: 1.2,}} 
+          drag
  className='z-20'>
     <div className='hidden sm:flex items-center justify-center shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)] rounded-xl'>
         <h1 className='p-4 rounded-xl text-center lg:text-4xl font-semibold bg-ghostwhite text-[#031463] text-5xl font-fira-code border-[4px] border-solid border-[#031463]'>

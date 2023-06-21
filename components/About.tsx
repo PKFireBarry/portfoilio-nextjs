@@ -41,6 +41,7 @@ function About({}: Props) {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
+                drag
                 className="relative w-[597px] h-[72px] text-center text-29xl text-white"
               >
                 <b className="hidden sm:text-md md:text-3xl lg:text-4x xl:text-5xl md:flex items-center justify-center w-[597px] md:h-[65px] h-[50px] ">
@@ -52,6 +53,8 @@ function About({}: Props) {
                 initial={{ opacity: 0, y: 50 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.5, delay: 0.1 }}
+                
+                whileHover={{scale: 1.1}}
                 className=" relative flex items-center  m-4 md:w-[60vw] text-black p-2 bg-ghostwhite rounded-xl font-fira-code border-[4px] border-solid border-[#031463] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]"
               >
                 <span className="[line-break:anywhere] text-sm md:text-lg lg:text-xl">
