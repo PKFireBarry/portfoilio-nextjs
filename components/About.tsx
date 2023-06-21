@@ -69,22 +69,18 @@ function About({}: Props) {
                     , as well as my ability to develop responsive and
                     interactive interfaces using modern frameworks, make me a
                     valuable asset to any team.
+                <br></br>
+                <br></br>
+                    My ultimate goal is to make a positive impact in the field of
+                    web development, to be a part of something greater than myself,
+                    and to bring value to a team while pursuing my dream. I am
+                    currently seeking new opportunities to apply my skills and
+                    expertise in a challenging and dynamic environment.
                   </span>
                 </span>
               </motion.div>
 
-              <motion.div
-                initial={{ opacity: 0, y: -50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.7, delay: 0.1 }}
-                className="relative inline-block m-4 shrink-0 text-sm md:text-lg lg:text-xl md:w-[50vw] text-black p-2 bg-ghostwhite rounded-xl font-fira-code border-[4px] border-solid border-[#031463] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]"
-              >
-                My ultimate goal is to make a positive impact in the field of
-                web development, to be a part of something greater than myself,
-                and to bring value to a team while pursuing my dream. I am
-                currently seeking new opportunities to apply my skills and
-                expertise in a challenging and dynamic environment.
-              </motion.div>
+
               <motion.div
                 initial={{ opacity: 0, y: -50 }}
                 whileInView={{ opacity: 1, y: 0 }}
