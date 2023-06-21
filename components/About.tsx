@@ -9,68 +9,87 @@ type Props = {}
 function About({}: Props) {
   return (
 <div className="h-screen w-screen flex justify-center">
-  <div className=" items-center bg-purple-500">
- 
-    <div className="mt-20 flex justify-center items-center w-screen  bg-green-500">
-      <h3 className="text-3xl md:text-5xl font-bold font-sans mb-4 text-black">
-        About Me
-      </h3>
-    </div>
+  <div className=" items-center flex ">
+    <div className=" bg-black w-screen h-screen overflow-hidden">
+      <div className="flex flex-col justify-center items-center h-screen w-screen">
+        <motion.div
+          initial={{ opacity: 0, y: 500 }}
+          whileInView={{ opacity: 1, y: 0, rotate: 720  }}
+          transition={{ duration: 3, delay: 0.1, type: "spring",damping: 10,mass: 1,stiffness: 50,}}  
+          whileHover={{ scale: 1.2, }}    
+          drag  
+         className=" w-[300px] h-[250px] flex justify-center  md:w-[500px] md:h-[400px]">
+          <Image
+            height={2000}
+            width={2000}
+            className="w-[300px] h-[250px]  md:w-[500px] md:h-[400px] rounded-md object-cover mt-20"
+            alt=""
+            src={AboutPic}
+          />
+        </motion.div>
 
-    <div className="flex flex-col md:flex-row h-1/3 md:h-[80%] items-center justify-start  mx-auto py-16 bg-rose-500">
-      <div className=" h-[80%]  bg-purple-500 m-8">
-        <Image
-          src={AboutPic}
-          alt="About Picture"
-          className=" rounded-lg object-cover h-full w-full resize"
-        />
+        <div className=" w-[80%] md:w-[597px] h-[675px] flex flex-col items-center justify-center">
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          
+          className="relative w-[597px] h-[72px] text-center text-29xl text-white">
+            <b className="hidden sm:text-md md:text-3xl lg:text-4x xl:text-5xl md:flex items-center justify-center w-[597px] md:h-[65px] h-[50px] ">
+              About Me?
+            </b>
+          </motion.div>
+
+          <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
+          className=" relative flex items-center  m-4 md:w-[60vw] text-black p-2 bg-ghostwhite rounded-xl font-fira-code border-[4px] border-solid border-[#031463] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]">
+            <span className="[line-break:anywhere] text-sm md:text-lg lg:text-xl">
+              <span>{`I am a full stack JavaScript developer with a focus on front end frameworks including `}</span>
+              <b>{`React `}</b>
+              <span>{`and `}</span>
+              <b>Next.js</b>
+              <span>{`. I have a passion for creating visually appealing and user-friendly websites and applications that leave a lasting impression. My experience in `}</span>
+              <b>HTML</b>
+              <span>,</span>
+              <b> CSS</b>
+              <span>{`,and `}</span>
+              <b>JavaScript</b>
+              <span>
+                , as well as my ability to develop responsive and interactive
+                interfaces using modern frameworks, make me a valuable asset to
+                any team.
+              </span>
+            </span>
+          </motion.div>
+
+          <motion.div
+          initial={{ opacity: 0, y: -50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.1 }} className="relative inline-block m-4 shrink-0 text-sm md:text-lg lg:text-xl md:w-[50vw] text-black p-2 bg-ghostwhite rounded-xl font-fira-code border-[4px] border-solid border-[#031463] shadow-[0px_0px_50px_rgba(0,_0,_0,_0.8)]">
+            My ultimate goal is to make a positive impact in the field of web
+            development, to be a part of something greater than myself, and to
+            bring value to a team while pursuing my dream. I am currently
+            seeking new opportunities to apply my skills and expertise in a
+            challenging and dynamic environment.
+          </motion.div>
+          <motion.div
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8, delay: 0.1 }}
+              
+          className="  rounded-6xl bg-midnightblue box-border w-[182px] h-[42px] flex flex-row items-center justify-center text-[16.51px] text-white border-[1.8px] border-solid border-color-text-dark hover:bg-gray-300 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-110 ">
+            <motion.a 
+            href='https://github.com/PKFireBarry'
+            className="relative ">View My Work</motion.a>
+          </motion.div>
+        </div>
       </div>
-
-      <div className="flex flex-wrap flex-col items-center md:items-start md:w-1/2 px-4 md:px-10 md:py-0">
-        <p className="text-sm md:text-md lg:text-xl text-black leading-loose mb-8">
-          I am a full stack JavaScript developer with a focus on front end
-          frameworks including React and Next.js. I have a passion for creating
-          visually appealing and user-friendly websites and applications that
-          leave a lasting impression. My experience in HTML, CSS, and
-          JavaScript, as well as my ability to develop responsive and
-          interactive interfaces using modern frameworks, make me a valuable
-          asset to any team.
-        </p>
-        <ul className="list-disc list-inside text-sm md:text-md lg:text-xl  text-black mb-8">
-          <li>
-            Completed Harvards CS50X course taught by David Malan in 2022
-            reigniting a passion for software development
-          </li>
-          <li>Proficient in React and Next.js</li>
-          <li>
-            Experience with responsive design and cross-browser compatibility
-          </li>
-          <li>Passionate about creating sleek and modern designs</li>
-          <li>
-            Dedicated to staying up-to-date with the latest web development
-            trends and technologies
-          </li>
-        </ul>
-        <p className="md:text-md lg:text-xl text-black leading-loose mb-8">
-          My ultimate goal is to make a positive impact in the field of web
-          development, to be a part of something greater than myself, and to
-          bring value to a team while pursuing my dream. I am currently seeking
-          new opportunities to apply my skills and expertise in a challenging
-          and dynamic environment.
-        </p>
-      </div>
-    </div>
-
-    <div className="flex justify-center bg-amber-400">
-      <a
-        href="https://github.com/PKFireBarry"
-        className=" hover:bg-blue-700  font-bold rounded-6xl bg-midnightblue box-border w-[182px] h-[42px] flex flex-row py-[11.006370544433594px] px-[31.184715270996094px] items-center justify-center text-[16.51px] text-white border-[1.8px] border-solid border-color-text-dark "
-      >
-        View my work
-      </a>
     </div>
   </div>
 </div>
+
   )
 }
 
