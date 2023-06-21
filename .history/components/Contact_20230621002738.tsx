@@ -39,19 +39,17 @@ function Contact({}: Props) {
         {`we'd`} love to hear about your project and provide help
     </p>
     <div className='bg-orange-500 md:hidden'>
-      <div className="flex flex-row  items-center justify-evenly gap-[20px] text-lg m-4">
+      <div className="flex flex-row  items-center justify-evenly gap-[20px] text-lg">
         <div className="relative text-base italic">barry0719@gmail.com</div>
-        <a
-        href='https://github.com/PKFireBarry'
-        className="relative [text-decoration:underline]">Github</a>
-        <a href='https://www.linkedin.com/in/darion-george/' className="relative [text-decoration:underline]">Linkedin</a>
-
+        <a className="relative [text-decoration:underline]">Github</a>
+        <a className="relative [text-decoration:underline]">Linkedin</a>
+        <a className="relative [text-decoration:underline]">Spotify</a>
       </div>
     </div>
   <div className="mx-auto w-[85%] h-[85%] px-0 sm:px-6 lg:px-8 flex flex-col justify-center items-center text-black md:flex-row">
     <div className=" hidden md:flex flex-col items-start justify-start gap-[20px] md:w-1/2 flex-wrap">
       <div className="relative  text-6xl">Let’s Talk</div>
-      <div className="relative text-xl inline-block w-full p-4 font-poppins">
+      <div className="relative text-xl inline-block  p-4 font-poppins w-[60%]">
         Have some big idea or brand to develop and need help? Then reach out{" "}
         {`we'd`} love to hear about your project and provide help
       </div>
@@ -61,11 +59,9 @@ function Contact({}: Props) {
       </div>
       <div className="flex flex-col items-start justify-start gap-[20px] text-base">
         <b className="relative text-13xl font-bold text-3xl">Socials</b>
-
-        <a
-        href='https://github.com/PKFireBarry'
-        className="relative [text-decoration:underline]">Github</a>
-        <a href='https://www.linkedin.com/in/darion-george/' className="relative [text-decoration:underline]">Linkedin</a>
+        <div className="relative [text-decoration:underline]">Github</div>
+        <div className="relative [text-decoration:underline]">Linkedin</div>
+        <div className="relative [text-decoration:underline]">Spotify</div>
       </div>
     </div>
 

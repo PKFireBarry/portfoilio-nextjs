@@ -61,7 +61,8 @@ function Contact({}: Props) {
       </div>
       <div className="flex flex-col items-start justify-start gap-[20px] text-base">
         <b className="relative text-13xl font-bold text-3xl">Socials</b>
-
+        <div className="relative [text-decoration:underline]">Github</div>
+        <div className="relative [text-decoration:underline]">Linkedin</div>
         <a
         href='https://github.com/PKFireBarry'
         className="relative [text-decoration:underline]">Github</a>
