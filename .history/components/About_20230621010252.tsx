@@ -13,10 +13,10 @@ function About({}: Props) {
         <div className=" w-screen h-screen overflow-hidden">
           <div className="flex flex-col justify-center items-center h-screen w-screen">
             <motion.div
-              initial={{ opacity: 0, y: 500, scale: 0.1 }}
-              whileInView={{scale: 1, opacity: 1, y: 0, rotate: 1080  }}
+              initial={{ opacity: 0, y: 500, scale: 0.5 }}
+              whileInView={{ opacity: 1, y: 0, rotate: 720, scale: 1 }}
               transition={{
-                duration: 4,
+                duration: 3,
                 delay: 0.1,
                 type: "spring",
                 damping: 10,

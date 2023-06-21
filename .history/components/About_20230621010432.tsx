@@ -16,7 +16,7 @@ function About({}: Props) {
               initial={{ opacity: 0, y: 500, scale: 0.1 }}
               whileInView={{scale: 1, opacity: 1, y: 0, rotate: 1080  }}
               transition={{
-                duration: 4,
+                duration: 3,
                 delay: 0.1,
                 type: "spring",
                 damping: 10,
